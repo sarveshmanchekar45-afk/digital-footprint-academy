@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification | Digital Footprints Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .certification-form { display: grid; gap: 20px; max-width: 820px; margin: 0 auto; }
+        .question-block { margin: 0; padding: 22px; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; background: rgba(18,26,47,.7); }
+        .question-block legend { padding: 0 8px; font-weight: 700; }
+        .question-block label { display: block; margin-top: 12px; padding: 10px 12px; border-radius: 8px; color: var(--muted); cursor: pointer; }
+        .question-block label:hover { background: rgba(125,211,252,.08); color: var(--text); }
+        .question-block input { margin-right: 10px; accent-color: var(--accent); }
+        .certification-result { margin-top: 20px; padding: 18px; border-left: 3px solid var(--accent); background: rgba(52,211,153,.1); }
+        .certification-result[hidden] { display: none; }
+        @media (max-width: 900px) { .nav-links { gap: 12px; flex-wrap: wrap; justify-content: flex-end; } }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="brand"><span class="brand-mark">D</span><span>Digital Footprints Academy</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="lesson.html">Lessons</a>
+                <a href="checklist.html">Checklist</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="forms.html">Forms</a>
+                <a class="active" href="certification.html">Certification</a>
+                <a href="tips.html">Safety Tips</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <a href="index.html" class="nav-cta">Home</a>
+        </div>
+    </header>
+    <main class="page">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Final knowledge check</span>
+                <h1>Certification Steps</h1>
+                <ol>
+                    <li>Review the material covered in the <a href="lesson.html"><u>lessons</u></a>.</li>
+                    <li>Complete the interactive <a href="quiz.html"><u>quiz</u></a>.</li>
+                    <li>Answer all questions in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPyxSYNZF5IBn5twzBf9czjT8eT-cvW5J68L04o53NPnAjBg/viewform?usp=dialog"><u>Social Media Safety & Digital Footprint Awareness Examination</u></a>.</li>
+                    <li>After finishing the form, Click on submit it for Certification.</li>
+                    <li>Receive your Certificate of Awareness on your recorded email.</li>
+                    <li>Open the email from DGTPF Team.</li>
+                    <li>Download the Certificate.</li>
+                </ol>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPyxSYNZF5IBn5twzBf9czjT8eT-cvW5J68L04o53NPnAjBg/viewform?usp=dialog" class="button primary" target="_blank">Click here to Start 
+                    Social Media Safety & Digital Footprint Awareness Examination</a>
+            </div>
+            
+            <div id="certificationResult" class="certification-result" role="status" hidden></div>
+        </div>
+    </main>
+    <footer><div class="container footer-row"><span>Digital Footprints Academy</span><span>Learn. Protect. Share wisely.</span></div></footer>
+    <script>
+        document.getElementById('certificationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const answers = [...this.querySelectorAll('input:checked')];
+            const result = document.getElementById('certificationResult');
+            if (answers.length !== 4) {
+                result.hidden = false;
+                result.textContent = 'Please answer all four questions before completing the questionnaire.';
+                return;
+            }
+            const score = answers.filter((answer) => answer.value === 'correct').length;
+            result.hidden = false;
+            result.textContent = `Certification complete. You scored ${score}/4 (${score * 25}%). Keep practicing smart, safe sharing habits.`;
+            this.querySelector('button').disabled = true;
+        });
+    </script>
+    <script src="page-transition.js"></script>
+</body>
+</html>

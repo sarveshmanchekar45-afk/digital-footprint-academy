@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Digital Footprints Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="brand"><span class="brand-mark">D</span><span>Digital Footprints Academy</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="lesson.html">Lessons</a>
+                <a href="checklist.html">Checklist</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="forms.html">Forms</a>
+                <a href="certification.html">Certification</a>
+                <a href="tips.html">Safety Tips</a>
+                <a class="active" href="dashboard.html">Dashboard</a>
+            </nav>
+            <a href="index.html" class="nav-cta">Home</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Project dashboard</span>
+                <h1>Feedback, responses, and survey photos</h1>
+                <p>Keep student feedback and survey evidence together, then jump to every learning page from one place.</p>
+            </div>
+
+            <nav class="dashboard-tabs" aria-label="Dashboard sections">
+                <a class="dashboard-tab active" href="#overview" aria-current="page">Overview</a>
+                <a class="dashboard-tab" href="#responses">Form responses</a>
+                <a class="dashboard-tab" href="#photos">Survey photos</a>
+                <a class="dashboard-tab" href="#pages">All webpages</a>
+                <a class="dashboard-tab" href="#certificates">Student certificates</a>
+                <a class="dashboard-tab" href="#pages" rel="noopener noreferrer">Literature review article</a>
+                <a class="dashboard-tab" href="#pages" rel="noopener noreferrer">Literature review PDF</a>
+            </nav>
+
+            <section id="overview" class="dashboard-summary" aria-label="Dashboard overview">
+                <article class="dashboard-stat"><span class="stat-label">Student feedback</span><strong>Google Form</strong><span>Responses can be reviewed in one shared sheet.</span></article>
+                <article class="dashboard-stat"><span class="stat-label">Survey evidence</span><strong>Google Drive</strong><span>Keep workshop and survey photos in one folder.</span></article>
+                <article class="dashboard-stat"><span class="stat-label">Learning pages</span><strong>8 resources</strong><span>Lessons, checklists, quizzes, forms, and more.</span></article>
+            </section>
+
+            <div class="dashboard-grid">
+                <section id="responses" class="panel dashboard-panel dashboard-wide">
+                    <div class="dashboard-panel-head">
+                        <div><span class="eyebrow">Student Examination</span><h2>Google Form responses</h2></div>
+                        <a class="button secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfPyxSYNZF5IBn5twzBf9czjT8eT-cvW5J68L04o53NPnAjBg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Open Examination form</a>
+                    </div>
+                     <p class="dashboard-note">Review the student Examination responses below.</p>
+                    <div class="sheet-frame">
+                        <h3>Student examination excel sheet</h3>
+                        <iframe src="https://docs.google.com/spreadsheets/d/1EeukHqHY32pahGwh32OXZMd-h864Mb4rRCpPYPoLhkE/edit?resourcekey=&gid=842392630#gid=842392630" title="Student examination excel sheet" loading="lazy"></iframe>
+                    </div>
+                </section>
+                <section id="responses" class="panel dashboard-panel dashboard-wide">
+                    <div class="dashboard-panel-head">
+                        <div><span class="eyebrow">Student feedback</span><h2>Google Form responses</h2></div>
+                        <a class="button secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdQeKEvFs4XsJqALjsQTfOUmZDgiUagFe-1zEDdhrNinyKZpg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Open feedback form</a>
+                    </div>
+                    <p class="dashboard-note">Review the student feedback responses below.</p>
+                    <div class="sheet-frame">
+                        <h3>Student feedback excel sheet</h3>
+                        <iframe src="https://docs.google.com/spreadsheets/d/1elJ1CCnf3wNyvH8tEmmWxZxD9pFXiDb06OOzalGACRE/edit?resourcekey=&gid=1173335514#gid=1173335514" title="Student feedback excel sheet" loading="lazy"></iframe>
+                    </div>
+                </section>
+
+                <section id="photos" class="panel dashboard-panel dashboard-half">
+                    <div class="dashboard-panel-head"><div><span class="eyebrow">Survey evidence</span><h2>Survey photos</h2></div><span class="status-badge">Google Drive</span></div>
+                    <p class="dashboard-note">View the survey photos shared in the project folder.</p>
+                    <div class="drive-frame">
+                        <iframe src="https://drive.google.com/embeddedfolderview?id=1RL-fJy8BjH5wRCYDfwere1uSnvpT1G4P#list" title="Survey photos Google Drive folder" loading="lazy"></iframe>
+                    </div>
+                    <a class="button primary full-button" href="https://drive.google.com/drive/u/0/folders/1RL-fJy8BjH5wRCYDfwere1uSnvpT1G4P" target="_blank" rel="noopener noreferrer">Open survey photos in Google Drive</a>
+                </section>
+
+                <section id="certificates" class="panel dashboard-panel dashboard-half">
+                    <div class="dashboard-panel-head"><div><span class="eyebrow">Student achievements</span><h2>Student certificates</h2></div><span class="status-badge">Google Drive</span></div>
+                    <p class="dashboard-note">View certificates shared with students in the certificate folder.</p>
+                    <div class="drive-frame">
+                        <iframe src="https://drive.google.com/embeddedfolderview?id=1x-AeaYF7pH01I28bOl3XXVEVP5PmSY-Y#list" title="Student certificates Google Drive folder" loading="lazy"></iframe>
+                    </div>
+                    <a class="button primary full-button" href="https://drive.google.com/drive/u/0/folders/1x-AeaYF7pH01I28bOl3XXVEVP5PmSY-Y" target="_blank" rel="noopener noreferrer">Open student certificates in Google Drive</a>
+                </section>
+
+                <section id="pages" class="panel dashboard-panel dashboard-wide">
+                    <div class="dashboard-panel-head"><div><span class="eyebrow">Quick access</span><h2>All webpages</h2></div><span class="status-badge">8 pages + PDF</span></div>
+                    <div class="page-links">
+                        <a href="index.html"><strong>Home</strong><span>Project introduction</span></a>
+                        <a href="lesson.html"><strong>Lessons</strong><span>Learn safer online habits</span></a>
+                        <a href="checklist.html"><strong>Checklist</strong><span>Protect personal information</span></a>
+                        <a href="quiz.html"><strong>Quiz</strong><span>Test your knowledge</span></a>
+                        <a href="forms.html"><strong>Forms</strong><span>Submit feedback and surveys</span></a>
+                        <a href="certification.html"><strong>Certification</strong><span>Complete the final assessment</span></a>
+                        <a href="tips.html"><strong>Safety Tips</strong><span>Quick reminders for daily use</span></a>
+                        <a href="https://dergipark.org.tr/en/pub/ajesi/article/1830085" target="_blank" rel="noopener noreferrer"><strong>Literature Review</strong><span>Read the published article</span></a>
+                        <a href="https://dergipark.org.tr/en/download/article-file/5450338" target="_blank" rel="noopener noreferrer"><strong>Literature Review PDF</strong><span>Open the downloadable PDF</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer><div class="container footer-row"><span>Digital Footprints Academy</span><span>Learn. Protect. Share wisely.</span></div></footer>
+    <script src="dashboard.js"></script>
+    <script src="page-transition.js"></script>
+</body>
+</html>

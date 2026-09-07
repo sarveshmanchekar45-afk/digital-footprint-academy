@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz | Digital Footprints Academy</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container nav">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">D</span>
+                    <span>Digital Footprints Academy</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="lesson.html">Lessons</a>
+                    <a href="checklist.html">Checklist</a>
+                    <a class="active" href="quiz.html">Quiz</a>
+                    <a href="forms.html">Forms</a>
+                    <a href="certification.html">Certification</a>
+                    <a href="tips.html">Safety Tips</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </nav>
+                <a href="index.html" class="nav-cta">Home</a>
+            </div>
+        </header>
+        <main class="page">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Self-check</span>
+                    <h1>Test your awareness with few seconds</h1>
+                    <p>Answer all questions about digital privacy and online safety.</p>
+                </div>
+                <div class="quiz">
+                    <section class="panel">
+                        <div id="question" class="question"></div>
+                        <div id="answers" class="answers"></div>
+                        <div class="quiz-controls">
+                            <span id="status"></span>
+                            <span id="timer" aria-live="polite">15s</span>
+                            <button id="nextBtn" class="button primary" type="button">Next</button>
+                        </div>
+                    </section>
+                    <aside class="panel">
+                        <h2>Your awareness score</h2>
+                        <div id="score" class="score">0%</div>
+                        <p id="resultText">Take the quiz to see how well you understand digital privacy.</p>
+                        <a id="certificationLink" class="button primary" href="certification.html" hidden>Continue to certification</a>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer-row">
+                <span>Digital Footprints Academy</span>
+                <span>Learn. Protect. Share wisely.</span>
+            </div>
+        </footer>
+        <script src="quiz.js"></script>
+        <script src="page-transition.js"></script>
+    </body>
+</html>
