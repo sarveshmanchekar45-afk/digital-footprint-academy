@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Digital Footprints Academy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-chart.css">
 </head>
 <body>
     <header class="site-header">
@@ -72,6 +73,24 @@
                         <a class="button secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfPyxSYNZF5IBn5twzBf9czjT8eT-cvW5J68L04o53NPnAjBg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Open Examination form</a>
                     </div>
                      <p class="dashboard-note">Review the student Examination responses below.</p>
+                    <figure class="score-distribution" aria-labelledby="score-distribution-title">
+                        <figcaption>
+                            <span class="eyebrow">Quiz results</span>
+                            <h3 id="score-distribution-title">Detailed Distribution of Social Media Safety Quiz Scores</h3>
+                        </figcaption>
+                        <div class="score-chart-layout">
+                            <div class="score-pie" role="img" aria-label="Pie chart: 100 points 55.7 percent, 90 points 22.8 percent, 80 points 6.3 percent, 70 points 5.1 percent, 60 points 5.1 percent, 50 points 2.5 percent, and other scores 2.5 percent."></div>
+                            <ul class="score-legend" aria-label="Score distribution">
+                                <li><span class="score-swatch score-100"></span><span>100 Points</span><strong>55.7%</strong></li>
+                                <li><span class="score-swatch score-90"></span><span>90 Points</span><strong>22.8%</strong></li>
+                                <li><span class="score-swatch score-80"></span><span>80 Points</span><strong>6.3%</strong></li>
+                                <li><span class="score-swatch score-70"></span><span>70 Points</span><strong>5.1%</strong></li>
+                                <li><span class="score-swatch score-60"></span><span>60 Points</span><strong>5.1%</strong></li>
+                                <li><span class="score-swatch score-50"></span><span>50 Points</span><strong>2.5%</strong></li>
+                                <li><span class="score-swatch score-other"></span><span>Other scores</span><strong>2.5%</strong></li>
+                            </ul>
+                        </div>
+                    </figure>
                     <div class="sheet-frame">
                         <h3>Student examination excel sheet</h3>
                         <iframe src="https://docs.google.com/spreadsheets/d/1EeukHqHY32pahGwh32OXZMd-h864Mb4rRCpPYPoLhkE/edit?resourcekey=&gid=842392630#gid=842392630" title="Student examination excel sheet" loading="lazy"></iframe>
