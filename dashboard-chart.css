@@ -1,0 +1,80 @@
+.score-distribution {
+    margin: 20px 0 24px;
+    padding: 22px;
+    border: 1px solid rgba(125, 211, 252, .22);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .04);
+}
+
+.score-distribution figcaption h3 {
+    margin: 12px 0 22px;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.score-chart-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 6vw, 72px);
+}
+
+.score-pie {
+    width: min(300px, 58vw);
+    aspect-ratio: 1;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4285f4 0% 55.7%,
+        #ea4335 55.7% 78.5%,
+        #fbbc04 78.5% 84.8%,
+        #34a853 84.8% 89.9%,
+        #ff6d01 89.9% 95%,
+        #b0bec5 95% 97.5%,
+        #00c9d8 97.5% 100%
+    );
+}
+
+.score-legend {
+    display: grid;
+    gap: 10px;
+    width: min(280px, 100%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.score-legend li {
+    display: grid;
+    grid-template-columns: 12px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: .92rem;
+}
+
+.score-legend strong {
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+
+.score-swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.score-100 { background: #4285f4; }
+.score-90 { background: #ea4335; }
+.score-80 { background: #fbbc04; }
+.score-70 { background: #34a853; }
+.score-60 { background: #ff6d01; }
+.score-50 { background: #b0bec5; }
+.score-other { background: #00c9d8; }
+
+@media (max-width: 620px) {
+    .score-distribution { padding: 18px; }
+    .score-chart-layout { flex-direction: column; }
+    .score-pie { width: min(260px, 72vw); }
+    .score-legend { width: 100%; }
+}
